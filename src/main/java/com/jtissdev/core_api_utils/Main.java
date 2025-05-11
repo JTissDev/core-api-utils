@@ -1,5 +1,10 @@
-package com.jtissdev.core-api-utils;
+package com.jtissdev.core_api_utils;
 
+/**
+ * The Main class serves as the entry point for the application.
+ * It contains the main method which executes a basic loop demonstrating
+ * the use of standard output for displaying messages and iteration values.
+ */
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
