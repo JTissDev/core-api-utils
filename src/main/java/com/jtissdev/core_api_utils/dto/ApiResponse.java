@@ -1,4 +1,4 @@
-package com.jtissdev.core-api-utils.dto;
+package com.jtissdev.core_api_utils.dto;
 
 public class ApiResponse<T> {
 	private boolean success;
