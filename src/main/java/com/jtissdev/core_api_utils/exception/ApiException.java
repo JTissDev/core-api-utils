@@ -1,6 +1,6 @@
 package com.jtissdev.core_api_utils.exception;
 
-public class ApiExtension extends RuntimeException {
+public class ApiException extends RuntimeException {
 	private final String code;
 
 	public ApiException(String code, String message) {
