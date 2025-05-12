@@ -94,10 +94,10 @@ class ApiHelpStructureTest {
 
 		// Assert
 		assertNotNull(responseBody, "Response body map should not be null");
-		assertNull(responseBody.get("endpoint"), "Endpoint should be null when input endpoint is null");
-		assertNull(responseBody.get("description"), "Description should be null when input description is null");
+		assertEquals("default-endpoint", responseBody.get("endpoint"), "Default value should be 'default-endpoint' when input endpoint is null");
+		assertEquals("No description provided", responseBody.get("description"), "Default value should be 'No description provided' when input description is null");
 		assertEquals(ApiHelpStructure.standardHeaders(), responseBody.get("headers"), "Headers should match the standard headers");
-		assertNull(responseBody.get("request"), "Request should be null when input example request is null");
+		assertTrue(((Map<?, ?>) responseBody.get("request")).isEmpty(), "Request should be empty when input example request is null");
 		assertNotNull(responseBody.get("response"), "Response field should not be null");
 
 		Map<String, Object> responseField = (Map<String, Object>) responseBody.get("response");
