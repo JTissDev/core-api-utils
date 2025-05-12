@@ -13,17 +13,17 @@ public class ApiHelpStructure {
 	}
 
 	public static Map<String, Object> standardResponseBody(String endpoint, String description, Map<String, Object> exampleRequest) {
-		return Map.of(
-				"endpoint", endpoint,
-				"description", description,
-				"headers", standardHeaders(),
-				"request", exampleRequest,
-				"response", Map.of(
-						"status", "200 OK",
-						"body", Map.of("info", "Example response body")
-				)
-		);
-	}
+    return Map.of(
+            "endpoint", endpoint != null ? endpoint : "default-endpoint",
+            "description", description != null ? description : "No description provided",
+            "headers", standardHeaders(),
+            "request", exampleRequest != null ? exampleRequest : Map.of(),
+            "response", Map.of(
+                    "status", "200 OK",
+                    "body", Map.of("info", "Example response body")
+            )
+    );
+}
 
 	public static Map<String, Object> basicGet(String endpoint, String description) {
 		return standardResponseBody(endpoint, description, Map.of("method", "GET"));
@@ -41,4 +41,3 @@ public class ApiHelpStructure {
 		return standardResponseBody(endpoint, description, Map.of("method", "DELETE"));
 	}
 }
-
