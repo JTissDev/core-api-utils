@@ -12,6 +12,14 @@ package com.jtissdev.core_api_utils.exception;
  * @since 1.0.0
  */
 public class ApiException extends RuntimeException {
+	/**
+	 * Code d'erreur associé à cette exception.
+	 * <p>
+	 * Ce code est utilisé pour identifier le type d'erreur spécifique qui s'est produite.
+	 * Il peut être utilisé pour la journalisation, le traitement des erreurs
+	 * ou pour fournir des informations détaillées à l'utilisateur.
+	 *
+	 */
 	private final String code;
 
 	/**
