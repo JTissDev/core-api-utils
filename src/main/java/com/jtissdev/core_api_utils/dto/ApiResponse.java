@@ -7,7 +7,7 @@ package com.jtissdev.core_api_utils.dto;
  *
  * @param <T> The type of the data returned in the response.
  * @author J.Tissier
- * @contact jtissdev@gmail.com
+ *  jtissdev@gmail.com
  * @version 1.0.0
  * @since 1.0.0
  */
