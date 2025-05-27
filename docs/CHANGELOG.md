@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.1.0] - 2025-05-27
+### Added
+- Ajout de nouvelles méthodes dans `ApiInfoBuilder` pour utiliser les informations du POM :
+  - `buildInfo(String serviceName, Map<String, Object> pomInfo)`
+  - `fullInfo(String serviceName, Map<String, Object> pomInfo)`
+- Intégration complète avec `PomInfoReader` pour récupérer automatiquement les métadonnées du projet
+
+### Changed
+- Amélioré l'extraction des métadonnées du POM dans le `PomInfoReader`
+
+## [1.0.0] - 2025-05-01
 ### Added
 - Initial project setup.
 - Core utility classes for validation, logging, and error handling.
