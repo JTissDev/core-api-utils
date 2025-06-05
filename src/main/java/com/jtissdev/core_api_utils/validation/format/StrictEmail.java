@@ -17,7 +17,7 @@ import java.lang.annotation.*;
  * et les domaines valides.
  *
  * @author J.Tissier
- * @version 1.0.0
+ * @version 1.3.0
  * @since 1.0.0
  * @see StrictEmailValidator
  */

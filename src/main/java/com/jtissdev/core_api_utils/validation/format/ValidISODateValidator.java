@@ -16,7 +16,7 @@ import java.time.format.DateTimeParseException;
  * l'utilisation d'autres annotations comme @NotNull ou @NotEmpty si nécessaire.
  *
  * @author J.Tissier
- * @version 1.0.0
+ * @version 1.3.0
  * @since 1.0.0
  * @see ValidISODate
  * @see LocalDate
